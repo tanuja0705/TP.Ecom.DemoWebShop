@@ -39,6 +39,7 @@ public class BaseClass {
 	@Parameters("browser")
 	@BeforeClass(alwaysRun = true)
 	public void launchBrowser(@Optional("chrome")String browser) throws Exception {
+		System.out.println("b:"+browser);
 		//String browser = prop.getDataFromProperty("browser");
 		driver =wUtil.launchBrowser(browser);
 		driver.get(prop.getDataFromProperty("url"));
