@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BatchSuite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="ecomDemowebshop.shoppingcart.AddToCartBySearching_Test"/>
+      <class name="ecomDemowebshop.shoppingcart.AddToCart_withoutLogin_Test"/>
+      <class name="ecom.Demowebshop.register.RegisterWithValidData_Test"/>
+      <class name="ecom.Demowebshop.login.LoginWithValidCredantials_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- BatchSuite -->
